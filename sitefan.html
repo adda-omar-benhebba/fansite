@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="site de fan du jeux et univers de cyberpunck 2077">
+    <link rel="stylesheet" type="text/css" href="sitefan.css">
+    <title>site fan cyberpunck</title>
+</head>
+<body>
+    <header>
+
+        <div id="headerlinkdiv">
+            <img src="image/logocyber.png" width="200" height="110" alt="Logo cyberpunk">
+            <a class="headerlinks" href="sitefan.html">Accueil</a>
+            <a class="headerlinks" href="univers.html">Univers</a>
+            <a class="headerlinks" href="realisations.html">Réalisations</a>
+            <a class="headerlinks" href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <div id="content">
+        <h1>Cyberpunk 2077</h1>
+        <p>
+            Cyberpunk 2077 is a futuristic open-world action role-playing game developed by CD Projekt.
+            Set in the dystopian Night City, players navigate the bustling metropolis as the mercenary
+            V, seeking immortality in a world filled with cyber-enhanced individuals, corporate intrigue,
+            and a vibrant but dangerous underworld. The game offers a compelling narrative, stunning visuals,
+            and a vast, immersive environment to explore.
+        </p>
+        <p>
+            Immerse yourself in the year 2077, where technology and humanity collide, shaping the future
+            of society and individuals alike. Cyberpunk 2077 is a thrilling adventure that combines
+            gripping storytelling with cutting-edge gameplay elements, making it a must-play experience for
+            fans of the cyberpunk genre.
+        </p>
+    </div>
+    <div id="player"></div>
+
+    <script>
+  // Chargement de l'API YouTube
+  var tag = document.createElement('script');
+  tag.src = 'https://www.youtube.com/iframe_api';
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // Création d'un objet de lecteur YouTube
+  var player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '500',
+      width: '750',
+      videoId: 'kfX9n_G0N2Y',
+      playerVars: {
+        'mute': 1,
+        'autoplay': 1, // Vous pouvez également ajouter l'autoplay si vous le souhaitez
+      },
+      events: {
+        'onReady': onPlayerReady,
+        'onStateChange': onPlayerStateChange
+      }
+    });
+  }
+
+  function onPlayerReady(event) {
+    // Vous pouvez ajouter des actions ici lorsqu'il est prêt à jouer
+  }
+
+  function onPlayerStateChange(event) {
+    // Vous pouvez ajouter des actions ici lorsque l'état du lecteur change
+  }
+    </script>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <video id="video-background" autoplay muted loop>
+        <source src="image/fond.mp4" type="video/mp4">
+    </video>
+</body>
+</html>

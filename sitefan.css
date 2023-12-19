@@ -1,0 +1,81 @@
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 4em;
+    background: url("image/glch.avif");
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(211, 194, 41, 0.658);
+}
+
+#headerlinkdiv {
+    border: 10px;
+    border-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.headerlinks:hover {
+    background-color: rgba(8, 8, 8, 0.616);
+}
+
+.headerlinks {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 2em;
+    margin-top: 20px;
+}
+
+#headersearchdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0.5em;
+}
+
+input {
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+body {
+    background: url("image/fond.mp4");
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#content {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    background-color: rgba(211, 194, 41, 0.418);
+    color: rgb(255, 255, 255);
+}
+
+.para1 {
+    color: rgb(255, 255, 255);
+}
